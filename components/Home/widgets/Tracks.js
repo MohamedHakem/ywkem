@@ -58,7 +58,7 @@ const Tracks = ({ shrinkL, shrinkR, setShrinkL, setShrinkR }) => {
         />
         {/* </motion.div> */}
 
-        <Link href={'/music'}>
+        {/* <Link href={'/music'}>
           <a>
             <div
               className={`${
@@ -68,7 +68,7 @@ const Tracks = ({ shrinkL, shrinkR, setShrinkL, setShrinkR }) => {
               <p>See All</p>
             </div>
           </a>
-        </Link>
+        </Link> */}
       </div>
     </div>
   )
