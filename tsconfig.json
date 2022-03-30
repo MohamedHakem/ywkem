@@ -13,8 +13,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": ".",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/projects/projects.js", "pages/index.js", "components/Home/HomeMasonry.jsx", "components/Home/widgets/remove-probably/TopTracks.js", "components/Home/widgets/remove-probably/Track.js"],
   "exclude": ["node_modules"]
 }

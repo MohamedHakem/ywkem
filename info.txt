@@ -1,0 +1,44 @@
+SPOTIFY_CLIENT_ID=c5a5893694234f88a7a4e04cb4caa6cf
+SPOTIFY_CLIENT_SECRET=ac37c7e570f24d72894ecfa97079c120
+SPOTIFY_REFRESH_TOKEN=
+
+
+
+callback url code = AQDDwv8hrtQ6SRlBpWu1Z-BRfdT2J_Kph1fT3SwQnUG4mH4mnsUZOd37Zo5Y9Ekmb3S_DVWIGG_XbrSfGHKAZckYKqQrd-S-afuC1gK-e1urkzQweaxcPo6JAbDpThLZovzGneTA66gTiGag80yOdm36MnNsXMhkMdqvIxn_RmaCioLAvncSf7qKenOcio7mCx2Fvp-V5Vp_4MIhox6X0Uj-wPju
+http://localhost:3000/?code=AQDDwv8hrtQ6SRlBpWu1Z-BRfdT2J_Kph1fT3SwQnUG4mH4mnsUZOd37Zo5Y9Ekmb3S_DVWIGG_XbrSfGHKAZckYKqQrd-S-afuC1gK-e1urkzQweaxcPo6JAbDpThLZovzGneTA66gTiGag80yOdm36MnNsXMhkMdqvIxn_RmaCioLAvncSf7qKenOcio7mCx2Fvp-V5Vp_4MIhox6X0Uj-wPju
+
+
+CLIENT_ID:client_SECRET encoded => YzVhNTg5MzY5NDIzNGY4OGE3YTRlMDRjYjRjYWE2Y2Y6YWMzN2M3ZTU3MGYyNGQ3Mjg5NGVjZmE5NzA3OWMxMjA=
+CLIENT_ID encoded => YzVhNTg5MzY5NDIzNGY4OGE3YTRlMDRjYjRjYWE2Y2Y=
+CLIENT_SECRET encoded => YWMzN2M3ZTU3MGYyNGQ3Mjg5NGVjZmE5NzA3OWMxMjA=
+
+
+
+
+
+curl 
+-H "Authorization: Basic <base64 encoded client_id:client_secret>" 
+-d grant_type=authorization_code 
+-d code=<AQDDwv8hrtQ6SRlBpWu1Z-BRfdT2J_Kph1fT3SwQnUG4mH4mnsUZOd37Zo5Y9Ekmb3S_DVWIGG_XbrSfGHKAZckYKqQrd-S-afuC1gK-e1urkzQweaxcPo6JAbDpThLZovzGneTA66gTiGag80yOdm36MnNsXMhkMdqvIxn_RmaCioLAvncSf7qKenOcio7mCx2Fvp-V5Vp_4MIhox6X0Uj-wPju> 
+-d redirect_uri=http%3A%2F%2Flocalhost:3000 https://accounts.spotify.com/api/token
+
+this is ready:
+
+curl 
+-H "Authorization: Basic <base64 encoded YzVhNTg5MzY5NDIzNGY4OGE3YTRlMDRjYjRjYWE2Y2Y=:YWMzN2M3ZTU3MGYyNGQ3Mjg5NGVjZmE5NzA3OWMxMjA="
+-H "Content-Type: application/x-www-form-urlencoded"
+-d grant_type=authorization_code 
+-d code=<AQDDwv8hrtQ6SRlBpWu1Z-BRfdT2J_Kph1fT3SwQnUG4mH4mnsUZOd37Zo5Y9Ekmb3S_DVWIGG_XbrSfGHKAZckYKqQrd-S-afuC1gK-e1urkzQweaxcPo6JAbDpThLZovzGneTA66gTiGag80yOdm36MnNsXMhkMdqvIxn_RmaCioLAvncSf7qKenOcio7mCx2Fvp-V5Vp_4MIhox6X0Uj-wPju>
+-d redirect_uri=http%3A%2F%2Flocalhost:3000 https://accounts.spotify.com/api/token
+
+
+
+Notes:
+
+
+//----// Method_1:  to expand widget to the whole width of the grid
+// on widget hover:
+// 1- change the main grid to position:relative
+// 2- change the widget style to:
+// position: absolute; width: 100%; left: 0px; margin: auto;
+// 3- margin top or bottom the element on the other column the same size of the expanded element */

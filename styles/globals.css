@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.HomeBackground {
+  background: linear-gradient(
+      330deg,
+      rgb(255 51 98 / 8%) 10%,
+      rgb(255 235 0 / 0%) 50%
+    ),
+    linear-gradient(20deg, rgb(255 200 0 / 13%) 5%, rgb(255 212 0 / 0%) 40%);
+}
+
+.flexing {
+  flex: 1 0 auto;
+}
+
+.extra2 {
+  content: '';
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  border-top: none;
+  transform: '';
+}
+
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50 rounded-md bg-gray-900 text-white;
+}
