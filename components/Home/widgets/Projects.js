@@ -7,8 +7,8 @@ const Projects = () => {
   return (
     <div className={projectsStyle}>
       <h3>I'm currently working on</h3>
-      <div className="mt-2 h-[100px] w-full rounded-2xl bg-gray-500 opacity-20">
-        project eye-catchy intro
+      <div className="mt-2 flex h-[100px] w-full justify-center rounded-2xl bg-gray-500 opacity-20">
+        <p className="m-auto">Super cool projects - soon!</p>
       </div>
       <InboundButton url={'/projects'}>
         <p className="text-base font-medium text-white">See All Projects</p>

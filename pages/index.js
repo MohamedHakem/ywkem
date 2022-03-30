@@ -21,40 +21,40 @@ import Resources from 'components/Home/widgets/Resources'
 import { useSession } from 'next-auth/react'
 
 const leftWidgets = [
-  <ProTips leftCol />,
   <Reading leftCol />,
   <Projects leftCol />,
-  <Blogs leftCol />,
-  <Movies leftCol />,
-  <Dashboard leftCol />,
-  <DesignPatterns leftCol />,
+  <ProTips leftCol />,
+  // <Blogs leftCol />,
+  // <Movies leftCol />,
+  // <Dashboard leftCol />,
+  // <DesignPatterns leftCol />,
 ]
 
 const rightWidgets = [
   <Tracks />,
   <FindMe />,
-  <DataStructure />,
-  <Algorithms />,
-  <ComponentLibrary />,
-  <Snippets />,
-  <Resources />,
+  // <DataStructure />,
+  // <Algorithms />,
+  // <ComponentLibrary />,
+  // <Snippets />,
+  // <Resources />,
 ]
 
 const widgets = [
-  <ProTips leftCol />,
   <Tracks />,
   <Reading leftCol />,
   <FindMe />,
+  <ProTips leftCol />,
   <Projects leftCol />,
-  <Blogs leftCol />,
-  <Movies leftCol />,
-  <Dashboard leftCol />,
-  <DesignPatterns leftCol />,
-  <DataStructure />,
-  <Algorithms />,
-  <ComponentLibrary />,
-  <Snippets />,
-  <Resources />,
+  // <Blogs leftCol />,
+  // <Movies leftCol />,
+  // <Dashboard leftCol />,
+  // <DesignPatterns leftCol />,
+  // <DataStructure />,
+  // <Algorithms />,
+  // <ComponentLibrary />,
+  // <Snippets />,
+  // <Resources />,
 ]
 
 const easing = [0.6, -0.05, 0.01, 0.99]

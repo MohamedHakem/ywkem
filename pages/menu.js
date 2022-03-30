@@ -34,8 +34,8 @@ const items = [
   <MenuItem url={'/projects'} />,
   <MenuItem url={'/projects'} />,
   <MenuItem url={'/projects'} />,
-  <MenuItem url={'/projects'} />,
-  <MenuItem url={'/projects'} />,
+  // <MenuItem url={'/projects'} />,
+  // <MenuItem url={'/projects'} />,
 ]
 const menu = () => {
   return (

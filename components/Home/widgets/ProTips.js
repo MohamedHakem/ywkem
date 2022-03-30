@@ -13,16 +13,19 @@ const ProTips = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             > */}
-          <Image
+          {/* <Image
             className="cursor-none"
             src="/ydkjs-getstarted.png"
             width={135}
             height={160}
-          />
+          /> */}
+          <div className="m-auto flex h-[130px] w-full justify-center">
+            <p className="m-auto">Something Amazing is coming Soon!</p>
+          </div>
           {/* </motion.button>
           </motion.div> */}
         </div>
-        <a
+        {/* <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/getify/You-Dont-Know-JS"
@@ -34,9 +37,9 @@ const ProTips = () => {
             <span className="mr-2 text-yellow-300">You Don't Know JS</span>
             by Kyle Simpson.
           </p>
-        </a>
+        </a> */}
       </div>
-      <p className="flex-start flex">
+      {/* <p className="flex-start flex">
         Follow me
         <a
           className="ml-1 underline underline-offset-2"
@@ -46,7 +49,7 @@ const ProTips = () => {
         >
           on Oku.
         </a>
-      </p>
+      </p> */}
     </div>
   )
 }

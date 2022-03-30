@@ -18,13 +18,15 @@ const AboutCard = () => {
           width={64}
           height={64}
           className={imageStyle}
-          src="https://dummyimage.com/80x80"
+          src="/mohamed-hakem-pic1.jpg"
         />
         <div className="ml-5 flex-1 text-white">
           <h1 className="font-sans text-2xl font-bold">Mohamed Hakem</h1>
-          <p className="text-md">Software Developer</p>
+          <p className="text-md">
+            Software Engineer, Try to drag any of the boxes below!
+          </p>
         </div>
-        <motion.div drag dragConstraints={dragConstraints}>
+        {/* <motion.div drag dragConstraints={dragConstraints}>
           <Link href={'/menu'}>
             <a className="my-auto h-full">
               <div className={buttonStyle}>
@@ -32,7 +34,7 @@ const AboutCard = () => {
               </div>
             </a>
           </Link>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   )

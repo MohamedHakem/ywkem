@@ -9,13 +9,13 @@ const FindMe = () => {
     <div className={findMeStyle}>
       <h3>Where you can find me 👇</h3>
       <OutboundButton
-        link={'https://www.twitter.com/mh_kem'}
+        link={'https://www.twitter.com/ywkem'}
         size={24}
         d={Twitter}
         text={'Say hi on Twitter'}
       />
       <OutboundButton
-        link={'https://linkedin.com/in/mhdev'}
+        link={'https://linkedin.com/in/ywkem'}
         size={50}
         d={LinkedIn}
         text={'Say hello on LinkedIn'}
