@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 const bubbleStyle1 = `button1 absolute z-0 h-full w-full animate-pulse shadow-3xl shadow-[#87b587] ring-2 ring-[#93b493] 
-                      ring-offset-0 transition-all duration-1000 hover:ring-[#0f0f0f]`
+                      ring-offset-0 transition-all duration-100 hover:ring-[#0f0f0f]`
 const bubbleStyle2 = `absolute h-full w-full bg-[#0f0f0f] bg-gradient-to-b to-[#0f0f0f] transition` // from-[#d2f03c]
 
 // const rolling = {
@@ -44,19 +44,25 @@ const TrackBubble = ({
         scale: [0, 1.5, 1],
         // rotate: [0, 360],
       }}
-      transition={{ delay: 0.7, duration: 0.8 }}
+      transition={{ delay: 0.5, duration: 0.8 }}
       className={bubbleStyle1}
       id="button"
       onMouseEnter={() => changeBgHandler(true, floorColor, true)}
       onMouseLeave={() => changeBgHandler(false, floorColor, false)}
     >
       {!changeBg && (
-        <Image
-          className={`rounded-full transition`}
-          src={profileImg}
-          width={100}
-          height={100}
-        />
+        <div className="relative h-[80px] w-[80px]">
+          <Image
+            className={`rounded-full transition`}
+            src={profileImg}
+            alt="a-picture-of-Margaux-Sauvé-a-song-writer-and-singer-for-her-music-project-ghostly-kisses"
+            layout="fill"
+            sizes="96px"
+            objectFit="cover"
+            // width={100}
+            // height={100}
+          />
+        </div>
       )}
       <div
         className={`${
