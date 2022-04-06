@@ -69,7 +69,7 @@ const staggerRight = {
 const HomeMasonry = ({ children, leftWidgets, rightWidgets }) => {
   const size = useWindowSize()
 
-  console.log('the hook: ', size)
+  // console.log('the hook: ', size)
 
   // const [shrinkL, setShrinkL] = useState(null)
   // const [shrinkR, setShrinkR] = useState(false)
@@ -104,9 +104,9 @@ const HomeMasonry = ({ children, leftWidgets, rightWidgets }) => {
             {leftWidgets.map((l, i) => (
               <motion.div
                 key={i}
-                drag
-                dragConstraints={dragConstraints}
-                variants={popIn}
+                // drag
+                // dragConstraints={dragConstraints}
+                // variants={popIn}
               >
                 {l}
               </motion.div>
@@ -125,9 +125,9 @@ const HomeMasonry = ({ children, leftWidgets, rightWidgets }) => {
             {rightWidgets.map((r, i) => (
               <motion.div
                 key={i}
-                variants={popIn}
-                drag
-                dragConstraints={dragConstraints}
+                // variants={popIn}
+                // drag
+                // dragConstraints={dragConstraints}
               >
                 {r}
               </motion.div>
@@ -139,9 +139,9 @@ const HomeMasonry = ({ children, leftWidgets, rightWidgets }) => {
           {children.map((c, i) => (
             <motion.div
               key={i}
-              drag
-              dragConstraints={dragConstraints}
-              variants={popIn}
+              // drag
+              // dragConstraints={dragConstraints}
+              // variants={popIn}
             >
               {c}
             </motion.div>

@@ -1,14 +1,15 @@
 import OutboundButton from '../OutboundButton'
 import SVG from '../SVG'
 
-const findMeStyle = `m-1 mb-[25px] sm:mb-0 h-auto w-auto rounded-2xl bg-[#0f0f0f] p-6 pt-4 text-center sm:mx-3`
+const findMeStyle = `m-1 mb-[25px] sm:mb-0 h-auto w-auto rounded-2xl bg-[#0f0f0f] p-8 pt-6 text-center sm:mx-3`
 
 const FindMe = () => {
   const [Twitter, LinkedIn, GitHub] = SVG
   return (
     <div className={findMeStyle}>
-      <h3>Where you can find me 👇</h3>
+      <h3 className="mb-3">Where you can find me 👇</h3>
       <OutboundButton
+        className="mb-2"
         link={'https://www.twitter.com/ywkem'}
         size={24}
         d={Twitter}

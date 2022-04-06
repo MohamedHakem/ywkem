@@ -21,10 +21,9 @@ import Resources from 'components/Home/widgets/Resources'
 import { useSession } from 'next-auth/react'
 
 const leftWidgets = [
-  <Reading leftCol />,
   <Projects leftCol />,
+  <Reading leftCol />,
   <ProTips leftCol />,
-  // <Blogs leftCol />,
   // <Movies leftCol />,
   // <Dashboard leftCol />,
   // <DesignPatterns leftCol />,
@@ -33,6 +32,7 @@ const leftWidgets = [
 const rightWidgets = [
   <Tracks />,
   <FindMe />,
+  <Blogs />,
   // <DataStructure />,
   // <Algorithms />,
   // <ComponentLibrary />,
@@ -42,10 +42,10 @@ const rightWidgets = [
 
 const widgets = [
   <Tracks />,
+  <Projects leftCol />,
   <Reading leftCol />,
   <FindMe />,
   <ProTips leftCol />,
-  <Projects leftCol />,
   // <Blogs leftCol />,
   // <Movies leftCol />,
   // <Dashboard leftCol />,
@@ -83,17 +83,17 @@ const stagger = {
 }
 
 const Home = () => {
-  const dragConstraints = { top: 0, left: 0, right: 0, bottom: 0 }
+  // const dragConstraints = { top: 0, left: 0, right: 0, bottom: 0 }
 
   const { data: session, status } = useSession()
-  console.log('session: ', session)
-  console.log('status: ', status)
+  // console.log('session: ', session)
+  // console.log('status: ', status)
 
   return (
     <motion.div
       exit={{ opacity: 0 }}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1 }}
       // transition={{ duration: 1 }}
     >
       <motion.div animate="animate" initial="initial">
@@ -268,9 +268,9 @@ app structure
       - node.js
 
   11- DS (could merge with Algo)
-  12- Algo 
+  12- Algo, quick explain, and code 
 
-  13- components
+  13- components, free UI React Lib, accessible premium Lib later 
 
   14- resources (for.. everything!)
 
@@ -280,6 +280,9 @@ app structure
 
   17- sweet resume page with a 1-page-pdf-resume download button to open as pdf file in the browser.
 
+  18- Best Threads on Twitter, newsletter for it, maybe a premium app later!
+
+Note: instead of "blog", make "content" and divide all of your website's content in section there.
 
 
 
