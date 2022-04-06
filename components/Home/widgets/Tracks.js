@@ -47,7 +47,7 @@ const Tracks = ({ shrinkL, shrinkR, setShrinkL, setShrinkR }) => {
         <TrackBubble
           changeBg={changeBg}
           setChangeBg={setChangeBg}
-          profileImg={'/ghostly-kisses-profile-2.jpg'}
+          profileImg={'/ghostly-kisses.jpg'}
           coverImg={'/ghostlykisses-cover.png'}
           floorColor={'#d2f03c'}
           setStatusColor={setStatusColor}

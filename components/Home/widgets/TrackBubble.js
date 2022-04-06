@@ -57,6 +57,8 @@ const TrackBubble = ({
             src={profileImg}
             alt="a-picture-of-Margaux-Sauvé-a-song-writer-and-singer-for-her-music-project-ghostly-kisses"
             layout="fill"
+            sizes="96px"
+            objectFit="cover"
             // width={100}
             // height={100}
           />

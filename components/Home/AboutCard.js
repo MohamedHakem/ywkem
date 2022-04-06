@@ -22,6 +22,7 @@ const AboutCard = () => {
             layout="fill"
             className={imageStyle}
             src="/mohamed-hakem-pic1.jpg"
+            sizes="64px"
           />
         </div>
         <div className="ml-5 flex-1 text-white">
