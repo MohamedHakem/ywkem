@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import { motion } from 'framer-motion'
 
 const cardStyle = `relative mb-6 box-border flex w-auto flex-col rounded-2xl bg-[#0f0f0f] p-6 text-white drop-shadow-xl`
 const innerCardStyle = `relative flex-start box-border flex flex-row flex-nowrap items-center justify-start`
@@ -15,8 +13,8 @@ const AboutCard = () => {
       <div className={innerCardStyle}>
         <div className="relative h-[64px] w-[64px]">
           <Image
-            priority="true"
-            alt="a-picture-of-Mohamed-Hakem"
+            // priority="true"
+            alt="Mohamed-Hakem"
             // width={64}
             // height={64}
             layout="fill"

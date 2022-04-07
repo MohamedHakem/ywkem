@@ -4,4 +4,5 @@ module.exports = {
     domains: ['dummyimage.com', 'links.papareact.com'],
   },
   reactStrictMode: true,
+  productionBrowserSourceMaps: true,
 }

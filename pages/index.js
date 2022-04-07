@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion'
-
+import Head from 'next/head'
 import HomeLayout from '../components/Layouts/HomeLayout'
 import HomeMasonry from '../components/Home/HomeMasonry'
 
@@ -18,7 +17,7 @@ import Algorithms from 'components/Home/widgets/Algorithms'
 import Snippets from 'components/Home/widgets/Snippets'
 import ComponentLibrary from 'components/Home/widgets/ComponentLibrary'
 import Resources from 'components/Home/widgets/Resources'
-import { useSession } from 'next-auth/react'
+// import { useSession } from 'next-auth/react'
 
 const leftWidgets = [
   <Projects leftCol />,
@@ -46,7 +45,7 @@ const widgets = [
   <Reading leftCol />,
   <FindMe />,
   <ProTips leftCol />,
-  // <Blogs leftCol />,
+  <Blogs leftCol />,
   // <Movies leftCol />,
   // <Dashboard leftCol />,
   // <DesignPatterns leftCol />,
@@ -81,215 +80,45 @@ const stagger = {
     },
   },
 }
+const title = 'Mohamed Hakem | Software Engineer'
+const description =
+  'Front-end developer, JavaScript enthusiast, and an Upcoming Software Engineer'
+const image = '/mohamed-hakem-pic1.jpg'
 
 const Home = () => {
-  // const dragConstraints = { top: 0, left: 0, right: 0, bottom: 0 }
-
-  const { data: session, status } = useSession()
-  // console.log('session: ', session)
-  // console.log('status: ', status)
-
   return (
-    <motion.div
-      exit={{ opacity: 0 }}
-      // initial={{ opacity: 0 }}
-      // animate={{ opacity: 1 }}
-      // transition={{ duration: 1 }}
-    >
-      <motion.div animate="animate" initial="initial">
-        <HomeLayout>
-          <AboutCard />
-          {/* <motion.div variants={stagger}> */}
-          <HomeMasonry leftWidgets={leftWidgets} rightWidgets={rightWidgets}>
-            {widgets.map((w, i) => (
-              <div key={i}>{w}</div>
-            ))}
-            {/* <motion.div variants={stagger}>
-              {widgets.map((w, i) => (
-                <motion.div
-                  // variants={fadeInUp}
-                  key={i}
-                  drag
-                  dragConstraints={dragConstraints}
-                  // initial={{ scale: 1 }}
-                  // animate={{
-                  //   // scale: [0.8, 1.03, 0.85, 1.025, 0.9, 1.02, 0.95, 1.01, 0.99, 1],
-                  //   scale: [0.8, 1.02, 0.95],
-                  // }}
-                  // transition={{ duration: 0.8 }}
-                  variants={fadeInUp}
-                >
-                  {w}
-                </motion.div>
-              ))}
-            </motion.div> */}
-          </HomeMasonry>
-          {/* </motion.div> */}
-        </HomeLayout>
-      </motion.div>
-    </motion.div>
+    <>
+      <Head>
+        <title>{title}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content={title} key="title" />
+        <link href="/static/favicon.ico" rel="shortcut icon" />
+
+        <meta name="robots" content="follow, index" />
+        <meta content={description} name="description" />
+        <meta property="og:url" content="https://ywkem.vercel.app/" />
+        <link rel="canonical" href="https://ywkem.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Mohamed Hakem" />
+        <meta property="og:description" content={description} />
+        <meta property="og:title" content={title} />
+        <meta property="og:image" content={image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@ywkem" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image} />
+      </Head>
+      <HomeLayout>
+        <AboutCard />
+        <HomeMasonry leftWidgets={leftWidgets} rightWidgets={rightWidgets}>
+          {widgets.map((w, i) => (
+            <div key={i}>{w}</div>
+          ))}
+        </HomeMasonry>
+      </HomeLayout>
+    </>
   )
 }
 
 export default Home
-
-//
-//
-//
-//
-// function useWindowSize() {
-//   // Initialize state with undefined width/height so server and client renders match
-//   // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
-//   const [windowSize, setWindowSize] = useState({
-//     width: undefined,
-//     height: undefined,
-//   })
-
-//   useEffect(() => {
-//     // only execute all the code below in client side
-//     if (typeof window !== 'undefined') {
-//       // Handler to call on window resize
-//       function handleResize() {
-//         // Set window width/height to state
-//         setWindowSize({
-//           width: window.innerWidth,
-//           height: window.innerHeight,
-//         })
-//       }
-
-//       // Add event listener
-//       window.addEventListener('resize', handleResize)
-
-//       // Call handler right away so state gets updated with initial window size
-//       handleResize()
-
-//       // Remove event listener on cleanup
-//       return () => window.removeEventListener('resize', handleResize)
-//     }
-//   }, []) // Empty array ensures that effect is only run on mount
-//   return windowSize
-// }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-//
-//
-//
-//   return <HomeLayout />
-// }
-
-/*
-app structure 
-
-/ Root
-  Pages:
-  1-home (all widgets)
-    widgets:
-      1- projects
-      2- blogs 
-        - all blogs
-          - [blog-1]
-          - [blog-2]
-      // you can ignore this 3- interesting Ted Talks 
-      4- fav music / <Tracks /> (in progress)
-      5- last movies watched
-      6- last books read / <Reading /> (in progress)
-      7- dashboard for stats
-      8- tips&tricks
-        - js item/button
-        - react.js
-        - next.js
-        - css
-
-      9- design patterns (you can start writing this as blogs, 
-        and when it gets more make a dedicated page/hub for them later.)
-        - js
-        - react
-        - node.js
-
-      10- DS (could merge with Algo)
-      11- Algo 
-
-      12- components
-
-      13- resources (for.. everything!)
-
-      14- snippets (like leerob.io)
-
-  2-  projects
-    - all projects
-    - [project-1]
-    - [project-2]
-    - ...etc
-
-  3- blogs (all blogs)
-    - [blog-1]
-    - [blog-2]
-    - ...etc
-
-  4- fav music (in progress)
-
-  5- fav/last movies watched
-
-  6- fav/recommended-list/last books read 
-
-  7- dashboard for stats
-
-  8- interesting ted talks 
-
-  9- tips&tricks
-      - js item/button
-      - react.js
-      - next.js
-      - css
-
-  10- design patters
-      - js
-      - react
-      - node.js
-
-  11- DS (could merge with Algo)
-  12- Algo, quick explain, and code 
-
-  13- components, free UI React Lib, accessible premium Lib later 
-
-  14- resources (for.. everything!)
-
-  15- snippets (like leerob.io)
-
-  16- achievements, certifications, learning paths, courses, etc
-
-  17- sweet resume page with a 1-page-pdf-resume download button to open as pdf file in the browser.
-
-  18- Best Threads on Twitter, newsletter for it, maybe a premium app later!
-
-Note: instead of "blog", make "content" and divide all of your website's content in section there.
-
-
-
-
-
-
-
-
-
-  */
