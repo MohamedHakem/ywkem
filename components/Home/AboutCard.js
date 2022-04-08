@@ -19,7 +19,7 @@ const AboutCard = () => {
             // height={64}
             layout="fill"
             className={imageStyle}
-            src="/mohamed-hakem-pic1.jpg"
+            src="/mohamed-hakem.jpg"
             sizes="64px"
           />
         </div>

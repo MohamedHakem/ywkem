@@ -56,58 +56,42 @@ const widgets = [
   // <Resources />,
 ]
 
-const easing = [0.6, -0.05, 0.01, 0.99]
-
-const fadeInUp = {
-  initial: {
-    y: 60,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.6,
-      ease: easing,
-    },
-  },
+const meta = {
+  title: 'Mohamed Hakem | Software Engineer | Digital Garden',
+  description:
+    'Front-end developer, JavaScript enthusiast, and an Upcoming Software Engineer. Follow for Web Development Content.',
+  image: '/mohamed-hakem.jpg',
+  canonical: 'https://ywkem.vercel.app/',
 }
-
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.5,
-    },
-  },
-}
-const title = 'Mohamed Hakem | Software Engineer'
-const description =
-  'Front-end developer, JavaScript enthusiast, and an Upcoming Software Engineer'
-const image = '/mohamed-hakem-pic1.jpg'
 
 const Home = () => {
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:title" content={title} key="title" />
-        <link href="/static/favicon.ico" rel="shortcut icon" />
-
-        <meta name="robots" content="follow, index" />
-        <meta content={description} name="description" />
+        <title>{meta.title}</title>
+        {/* <meta name="viewport" content="initial-scale=1.0, width=device-width" /> */}
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=yes, viewport-fit=cover"
+        />
+        <meta name="description" content={meta.description} />
+        <link rel="canonical" href={meta.canonical} />
+        {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content="https://ywkem.vercel.app/" />
-        <link rel="canonical" href="https://ywkem.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Mohamed Hakem" />
-        <meta property="og:description" content={description} />
-        <meta property="og:title" content={title} />
-        <meta property="og:image" content={image} />
+        <meta property="og:title" content={meta.title} key="title" />
+        <meta property="og:image" content={meta.image} />
+        <meta property="og:description" content={meta.description} />
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta property="twitter:domain" content="ywkem.vercel.app" />
+        <meta property="twitter:url" content="https://ywkem.vercel.app/" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@ywkem" />
         <meta name="twitter:site" content="@ywkem" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={image} />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:image" content={meta.image} />
+        <meta name="twitter:description" content={meta.description} />
       </Head>
       <HomeLayout>
         <AboutCard />

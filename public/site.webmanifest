@@ -1,1 +1,79 @@
-{"name":"MohamedHakem","short_name":"Ywkem","icons":[{"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png","purpose":"any"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}],"theme_color":"#ffffff","background_color":"#ffffff","display":"standalone","scope":"/","description":"Front-end developer, JavaScript enthusiast, and an Upcoming Software Engineer"}
+{
+   "name":"Hakem's Digital Garden",
+   "short_name":"Hakem's Blog",
+   "start_url":"/",
+   "id": "/",
+   "display":"standalone",
+   "orientation":"portrait",
+   "background_color":"#FFFFFF",
+   "theme_color":"#000000",
+   "scope":"/",
+   "description":"Front-end developer, JavaScript enthusiast, and an Upcoming Software Engineer",
+   "icons":[
+      {
+         "src":"/icons-vector.svg",
+         "type":"image/svg+xml",
+         "sizes":"1436x1436"
+      },
+      {
+         "src":"/android-icon-36x36.png",
+         "sizes":"36x36",
+         "type":"image/png",
+         "density":"0.75",
+         "purpose":"any"
+      },
+      {
+         "src":"/android-icon-48x48.png",
+         "sizes":"48x48",
+         "type":"image/png",
+         "density":"1.0",
+         "purpose":"any"
+      },
+      {
+         "src":"/android-icon-72x72.png",
+         "sizes":"72x72",
+         "type":"image/png",
+         "density":"1.5",
+         "purpose":"any"
+      },
+      {
+         "src":"/android-icon-96x96.png",
+         "sizes":"96x96",
+         "type":"image/png",
+         "density":"2.0",
+         "purpose":"any"
+      },
+      {
+         "src":"/android-icon-144x144.png",
+         "sizes":"144x144",
+         "type":"image/png",
+         "density":"3.0",
+         "purpose":"any"
+      },
+      {
+         "src":"/android-icon-192x192.png",
+         "sizes":"192x192",
+         "type":"image/png",
+         "density":"4.0",
+         "purpose":"maskable"
+      },
+      {
+         "src":"/android-icon-256x256.png",
+         "sizes":"256x256",
+         "type":"image/png",
+         "density":"4.0"
+      },
+      {
+         "src":"/android-icon-640x640.png",
+         "sizes":"640x640",
+         "type":"image/png",
+         "density":"4.0"
+      },
+      {
+         "src":"/android-icon-1077x1077.png",
+         "sizes":"1077x1077",
+         "type":"image/png",
+         "density":"4.0"
+      }
+   ]
+}

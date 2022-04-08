@@ -27,14 +27,15 @@ const Reading = () => {
             // transition={{ duration: 0.4 }}
             // initial={{ opacity: 0.2 }}
             // animate={{ opacity: 1 }}
-            className="relative m-auto h-[195px] w-[130px]"
+            className="relative m-auto h-[195px] w-[131px]"
           >
             <Image
               className="cursor-none"
               src="/ydkjs-getstarted.png"
+              // src="/android-icon-1077x1077.png"
               alt="you-don't-know-javascript-yet-a-book-by-kyle-simpson"
-              // width={115}
-              // height={130}
+              sizes="136px"
+              // sizes="470px"
               layout="fill"
             />
           </motion.div>
