@@ -29,7 +29,7 @@ const Tracks = ({ shrinkL, shrinkR, setShrinkL, setShrinkR }) => {
             changeBg &&
             '!left-[10px] mt-6 w-auto border-[#45483c] text-xs text-white'
           } blur-1xl z-100 absolute left-[30px] z-10 m-auto mt-4 flex w-fit items-center rounded-full border-[#ccc] bg-transparent 
-          px-4 py-3 backdrop-blur-2xl transition-all delay-[200ms] duration-1000 ease-in-out md:left-[90px]`}
+          px-4 py-3 backdrop-blur-2xl transition-all duration-1000 ease-in-out md:left-[90px]`}
         >
           <span>🎧 I'm Listening to</span>
           <span
