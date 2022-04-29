@@ -12,7 +12,7 @@ const MenuItem = ({ url }) => {
               <span className="mr-4 rounded-md bg-yellow-300 p-1 font-bold text-black">
                 YDKJS
               </span>
-              <span className="text-yellow-300">You Don't Know JS</span>
+              <span className="text-yellow-300">You Don&apos;t Know JS</span>
             </p>
           </div>
         </div>

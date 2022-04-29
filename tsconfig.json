@@ -16,6 +16,6 @@
     "baseUrl": ".",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/projects/projects.js", "pages/index.js", "components/Home/HomeMasonry.jsx", "components/Home/widgets/remove-probably/TopTracks.js", "components/Home/widgets/remove-probably/Track.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/projects/projects.js", "pages/index.js", "components/Home/HomeMasonry.jsx", "components/Home/widgets/remove-probably/TopTracks.js", "components/Home/widgets/remove-probably/Track.js", "pages/_app.js"],
   "exclude": ["node_modules"]
 }

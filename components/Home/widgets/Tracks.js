@@ -12,7 +12,7 @@ const Tracks = ({ shrinkL, shrinkR, setShrinkL, setShrinkR }) => {
 
   return (
     <div
-      className={`relative m-1 mb-[25px] h-auto  w-auto rounded-3xl sm:mb-0 ${
+      className={`relative m-1 h-auto  w-auto rounded-3xl sm:mb-0 ${
         changeBg ? 'bg-[#0f0f0f] font-semibold text-white' : 'bg-[#0f0f0f]'
       } text-center font-semibold text-zinc-900 sm:mx-3`}
     >
@@ -31,7 +31,7 @@ const Tracks = ({ shrinkL, shrinkR, setShrinkL, setShrinkR }) => {
           } blur-1xl z-100 absolute left-[30px] z-10 m-auto mt-4 flex w-fit items-center rounded-full border-[#ccc] bg-transparent 
           px-4 py-3 backdrop-blur-2xl transition-all duration-1000 ease-in-out md:left-[90px]`}
         >
-          <span>🎧 I'm Listening to</span>
+          <span>🎧 Im Listening to</span>
           <span
             className={`status online ml-2 flex h-3 w-3 rounded-full bg-green-500 ring-1`}
           >
