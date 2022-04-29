@@ -145,7 +145,7 @@ export default function Document() {
         <link rel='apple-touch-startup-image' href='/images/apple_splash_640.png' sizes='640x1136' />
         --> */}
       </Head>
-      <body>
+      <body className="bg-[#1a1a1a]">
         <Main />
         <NextScript />
       </body>

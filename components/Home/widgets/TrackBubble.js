@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-const bubbleStyle1 = `button1 absolute z-0 h-full w-full animate-pulse shadow-3xl shadow-[#87b587] ring-2 ring-[#93b493] 
+const bubbleStyle1 = `button1 absolute cursor-pointer z-0 h-full w-full animate-pulse shadow-3xl shadow-[#87b587] ring-2 ring-[#93b493] 
                       ring-offset-0 transition-all duration-100 hover:ring-[#0f0f0f]`
 const bubbleStyle2 = `absolute h-full w-full bg-[#0f0f0f] bg-gradient-to-b to-[#0f0f0f] transition` // from-[#d2f03c]
 
@@ -40,10 +40,10 @@ const TrackBubble = ({
           <Image
             className={`rounded-full transition`}
             src={profileImg}
-            alt="a-picture-of-Margaux-Sauvé-a-song-writer-and-singer-for-her-music-project-ghostly-kisses"
             layout="fill"
             sizes="96px"
             objectFit="cover"
+            alt="a-picture-of-Margaux-Sauvé-a-song-writer-and-singer-for-her-music-project-ghostly-kisses"
           />
         </div>
       )}
@@ -53,7 +53,7 @@ const TrackBubble = ({
         } ${bubbleStyle2} z-0 mb-4 from-[#93b493] opacity-0 transition delay-500 duration-[1200ms] hover:opacity-100`}
       >
         <div className="relative h-[180px] w-full ">
-          <Image src={coverImg} layout={'fill'} />
+          <Image src={coverImg} layout={'fill'} alt="ghostly-kisses" />
         </div>
         <div
           className={`text-gradient1 absolute top-[132px] z-10 flex w-full justify-start pt-4 font-sans text-[42px]

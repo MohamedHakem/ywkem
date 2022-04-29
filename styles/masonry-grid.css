@@ -1,0 +1,29 @@
+.masonry {
+  /* transition: all .5s ease-in-out; */
+  column-gap: 8px;
+  column-fill: initial;
+  /* height: 655px; */
+  /* height: 100vh; */
+}
+
+.masonry .brick {
+  margin-bottom: 24px;
+  width: 100%;
+  display: inline-block; /* Fix the misalignment of items */
+  vertical-align: top; /* Keep the item on the very top */
+}
+
+/* Masonry on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+/* Masonry on big screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
