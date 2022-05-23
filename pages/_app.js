@@ -3,7 +3,6 @@ import '../styles/freeCircle.css'
 import '../styles/TracksBubble.css'
 import '../styles/masonry-grid.css'
 
-import { AnimatePresence } from 'framer-motion'
 export default function MyApp({
   Component,
   pageProps: { ...pageProps },

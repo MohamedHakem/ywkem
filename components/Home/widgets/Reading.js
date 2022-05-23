@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 const Reading = () => {
   const dragConstraints = { top: 0, left: 0, right: 0, bottom: 0 }
@@ -8,7 +7,7 @@ const Reading = () => {
       📚 I&apos;m reading
       <div className="my-3 h-auto w-full rounded-xl border border-[#242424] py-5 px-1">
         <div className="h-full w-full transition hover:scale-110 active:scale-95">
-          <motion.div className="relative m-auto h-[195px] w-[131px]">
+          <div className="relative m-auto h-[195px] w-[131px]">
             <Image
               priority="true"
               className="cursor-none"
@@ -17,7 +16,7 @@ const Reading = () => {
               sizes="136px"
               layout="fill"
             />
-          </motion.div>
+          </div>
         </div>
         <a
           target="_blank"

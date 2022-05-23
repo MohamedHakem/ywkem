@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 
 const bubbleStyle1 = `button1 absolute cursor-pointer z-0 h-full w-full animate-pulse shadow-3xl shadow-[#87b587] ring-2 ring-[#93b493] 
                       ring-offset-0 transition-all duration-100 hover:ring-[#0f0f0f]`
@@ -23,7 +22,7 @@ const TrackBubble = ({
     setStatusColor(color)
   }
   return (
-    <motion.div
+    <div
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
@@ -66,7 +65,7 @@ const TrackBubble = ({
           </p>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 
