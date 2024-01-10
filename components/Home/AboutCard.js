@@ -25,7 +25,7 @@ const AboutCard = () => {
             excellent-feedback Software Engineer, hire me on{' '}
             <a
               className={`text-lg ${UpworkStyle}`}
-              href="https://www.upwork.com/freelancers/mkem"
+              href="https://www.upwork.com/freelancers/~01675da7684c6193a5"
             >
               Upwork
             </a>
