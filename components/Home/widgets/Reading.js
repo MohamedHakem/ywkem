@@ -39,7 +39,7 @@ const Reading = () => {
           className="ml-1 underline underline-offset-2"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.twitter.com/mh_kem"
+          href="https://oku.club/user/hakem"
         >
           on Oku.
         </a>
