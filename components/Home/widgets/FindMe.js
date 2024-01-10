@@ -16,7 +16,7 @@ const FindMe = () => {
         text={'Say hi on Twitter'}
       />
       <OutboundButton
-        link={'https://linkedin.com/in/ywkem'}
+        link={'https://www.linkedin.com/in/m-hakem'}
         size={50}
         d={LinkedIn}
         text={'Say hello on LinkedIn'}
