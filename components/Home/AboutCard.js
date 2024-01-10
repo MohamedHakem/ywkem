@@ -21,7 +21,7 @@ const AboutCard = () => {
         <div className="ml-5 flex-1 text-white">
           <h1 className="font-sans text-2xl font-bold">Mohamed Hakem</h1>
           <p className="text-md">
-            All <span className={`text-md ${UpworkStyle}`}>5-star</span>{' '}
+            A 100% JSS (Job Success Score) & All <span className={`text-md ${UpworkStyle}`}>5-star</span>{' '}
             excellent-feedback Software Engineer, hire me on{' '}
             <a
               className={`text-lg ${UpworkStyle}`}
